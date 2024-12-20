@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=El+Messiri:wght@400..700&display=swap');
+.Container_All{
+display: flex;
+flex-direction: column;
+}
+
+.Container_All .Text_Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.Container_All .Text_Container h1{
+    font-family: "Bungee Shade", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 55px;
+    width: fit-content;
+    margin: auto;
+}
+
+.Container_All .Text_Container p{
+    color: white;
+    font-size: 28px;
+    font-family: cursive;
+}
+
+.Container_All .Text_Container p span{
+    color: #498AFB;
+}
+
+.Container_All .Game_Container{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    width: fit-content;
+    height: auto;
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+    border: solid 1px white;
+    border-radius: 5px;
+    gap: 5px;
+    position: relative;
+}
+
+.Container_All .Game_Container::before {
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    left: 161px;
+    top: 0;
+}
+
+.Container_All .Game_Container::after{
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    right: 162px;
+    top: 0;
+    }
+
+.Container_All .Game_Container p{
+    font-size: 130px;
+    font-weight: 500;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
+
+.Container_All .Game_Container #P_1::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: -1px;
+    left: -5px;
+}
+
+.Container_All .Game_Container #P_2::before{
+    content: '';
+    width: 98%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: -1px;
+    left: 1px;
+}
+
+.Container_All .Game_Container #P_3::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: -1px;
+    left: 4px;
+}
+
+.Container_All .Game_Container #P_4::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: -1px;
+    left: -5px;
+}
+
+.Container_All .Game_Container #P_5::before{
+    content: '';
+    width: 98%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: -1px;
+    left: 1px;
+}
+
+.Container_All .Game_Container #P_6::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: -1px;
+    left: 4px;
+}
+
+.Container_All .Winner_Hidding{
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
+    margin: auto;
+    width: fit-content;
+    font-family: monospace;
+}
+
+@media (min-width:300px) and (max-width:500px){
+    .Container_All .Text_Container {
+        gap: 10px;
+    }
+    .Container_All .Text_Container h1 {
+        font-size: 45px;
+    }
+    .Container_All .Text_Container p {
+        font-size: 25px;
+    }
+    .Container_All .Game_Container {
+        grid-template-columns: repeat(3, 85px);
+        grid-template-rows: repeat(3, 85px);
+    }
+    .Container_All .Game_Container::before {
+        left: 188px;
+    }
+    .Container_All .Game_Container::after {
+        right: 188px;
+    }
+}

@@ -1,0 +1,32 @@
+.Container_Footer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 10px 0px 15px 0px;
+}
+
+.Container_Footer h2{
+    font-size: 22px;
+    color: #ffffffbf;
+    width: fit-content;
+    margin: auto; 
+    font-family: cursive;
+    }
+
+.Container_Footer h2 span{
+color: #498afb;
+border-bottom: solid 1px #498afb;
+}
+
+.Container_Footer .Links_Container{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+
+@media (min-width:300px) and (max-width:500px){
+    .Container_Footer h2 {
+        font-size: 15px;
+    }
+}
