@@ -25,7 +25,7 @@ flex-direction: column;
 .Container_All .Text_Container p{
     color: white;
     font-size: 28px;
-    font-family: cursive;
+    font-family: sans-serif;
 }
 
 .Container_All .Text_Container p span{
@@ -168,4 +168,9 @@ flex-direction: column;
     .Container_All .Game_Container::after {
         right: 188px;
     }
+    .Container_All .Game_Container p {
+        font-size: 110px;
+        padding-bottom: 28px;
+    }
+    
 }

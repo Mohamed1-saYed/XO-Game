@@ -105,7 +105,7 @@ export default function App() {
      SetPlayerWinner(`Player ${box_3.current.innerHTML} is winner`);
     box_4.current.style.cssText = `color: #ffffff96`;
     box_5.current.style.cssText = `color: #ffffff96`;
-    box_6.current.style.cssText = `color: #ffffff96`;
+    box_2.current.style.cssText = `color: #ffffff96`;
     box_7.current.style.cssText = `color: #ffffff96`;
     box_8.current.style.cssText = `color: #ffffff96`;
     box_1.current.style.cssText = `color: #ffffff96`;
